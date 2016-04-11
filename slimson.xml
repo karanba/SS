@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<slimSON closeOthers="false" targetRenderEngineVersion="1.*">
+    <groups name="G1" label="Group 1" isOpen="true" order="2" scope="perProfile">
+        <tabs name="ERI" label="Ericson" order="1">
+            <sections name="Section 1:" defaultColspan="3"  formLayout="form-inline">
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <tooltip>Domestic confined any but son bachelor advanced remember. How proceed offered her offence shy forming</tooltip>
+                    <validation>
+                        <required>false</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5.5</value>
+                    <labelStyle>color: #fff; padding: 10px; background: #ff7500</labelStyle>
+                    <displayName>Custom Label Style</displayName>
+                    <displayType>input</displayType>
+                </fields>
+                <fields>
+                    <value>2</value>
+                    <displayName>Single Select</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>select</displayType>
+                    <options value="1">Option 1</options>
+                    <options value="2">Option 2</options>
+                    <options value="3">Option 3</options>
+                    <options value="4">Option 4</options>
+                </fields>
+                <fields>
+                    <values value="1">Option 1</values>
+                    <values value="3">Option 3</values>
+                    <displayName>Multi Select</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>multiselect</displayType>
+                    <options value="1">Option 1</options>
+                    <options value="2">Option 2</options>
+                    <options value="3">Option 3</options>
+                    <options value="4">Option 4</options>
+                </fields>
+            </sections>
+            <sections name="Section 2:" defaultColspan="3">
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields colspan="2">
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Colspan 2</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields colspan="4">
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>colspan 4</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields colspan="6">
+                    <value>Residence dejection agreement am as to abilities immediate suffering.</value>
+                    <name>TextArea1</name>
+                    <displayName>Text  Area</displayName>
+                    <dataType>Int32</dataType>
+                    <inputStyle>height: 2.4em;</inputStyle>
+                    <displayType>textarea</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field 10</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field 11</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field 12</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field 13</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields colspan="3">
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Colspan 3</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <value>5</value>
+                    <name>Field1</name>
+                    <displayName>Field One</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+            </sections>
+            <sections name="Section 3:  Form Layout: form-inline" defaultColspan="3" order="1">
+                <fields>
+                    <value>5</value>
+                    <name>C1</name>
+                    <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+                    <inputStyle>border: dashed 1px #ff7500;</inputStyle>
+                    <displayName>Custom Input Style</displayName>
+                    <dataType>Int32</dataType>
+                    <displayType>input</displayType>
+                    <validation>
+                        <required>true</required>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
+                </fields>
+                <fields>
+                    <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+                    <value>5.5</value>
+                    <displayName>Field Two</displayName>
+                </fields>
+                <fields>
+                    <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+                    <value>true</value>
+                    <name>FieldSwitch</name>
+                    <displayName>Switch Field</displayName>
+                    <dataType>boolean</dataType>
+                    <displayType>switch</displayType>
+                    <onLabel>Y</onLabel>
+                    <offLabel>N</offLabel>
+                    <validation>
+                        <required>true</required>
+                    </validation>
+                </fields>
+                <fields>
+                    <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+                    <value>true</value>
+                    <name>C3</name>
+                    <inputStyle>border: dashed 1px #ff7500;</inputStyle>
+                    <displayName>Boolean Field</displayName>
+                    <dataType>boolean</dataType>
+                    <displayType>checkbox</displayType>
+                    <validation>
+                        <required>true</required>
+                    </validation>
+                </fields>
+
+            </sections>
+        </tabs>
+        <tabs name="HWI" label="Huawei" order="3">
+            <sections name="Section HWI Advance">
+
+            </sections>
+            <sections name="Section Dance With Me">
+
+            </sections>
+        </tabs>
+    </groups>
+    <groups name="G2" label="Group 2" isOpen="true" order="1" scope="perPair">
+        <freqs F1="110" F2="110">IntraFreq</freqs>
+        <freqs F1="110" F2="220">InterFreq</freqs>
+        <freqs F1="220" F2="220">IntraFreq</freqs>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>true</value>
+            <name>Status</name>
+            <displayName>Status</displayName>
+            <dataType>boolean</dataType>
+            <displayType>switch</displayType>
+            <onLabel>On</onLabel>
+            <offLabel>Off</offLabel>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>3</value>
+            <name>RelationWeight</name>
+            <displayName>Relation Weight</displayName>
+            <dataType>int</dataType>
+            <displayType>input</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>true</value>
+            <name>ForceTwoWay</name>
+            <displayName>Force Two Way</displayName>
+            <dataType>boolean</dataType>
+            <displayType>checkbox</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>true</value>
+            <name>ForceCosite</name>
+            <displayName>Force Cosite</displayName>
+            <dataType>boolean</dataType>
+            <displayType>checkbox</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>true</value>
+            <name>OnlyCosite</name>
+            <displayName>Only Cosite</displayName>
+            <dataType>boolean</dataType>
+            <displayType>checkbox</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>true</value>
+            <name>Dellduetoadd</name>
+            <displayName>Del due to Add</displayName>
+            <dataType>boolean</dataType>
+            <displayType>checkbox</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>78</value>
+            <name>Dellduetoadd</name>
+            <displayName>Max Add Dist</displayName>
+            <dataType>int32</dataType>
+            <displayType>input</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>60</value>
+            <name>MinDelldist</name>
+            <displayName>Min Del Dist</displayName>
+            <dataType>int32</dataType>
+            <displayType>input</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>50</value>
+            <name>MinDelldist</name>
+            <displayName>Min Nbr Count</displayName>
+            <dataType>int32</dataType>
+            <displayType>input</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+        <fields>
+            <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
+            <value>20</value>
+            <name>MaxDelldist</name>
+            <displayName>Max Nbr Count</displayName>
+            <dataType>int32</dataType>
+            <displayType>input</displayType>
+            <validation>
+                <required>true</required>
+            </validation>
+        </fields>
+    </groups>
+</slimSON>

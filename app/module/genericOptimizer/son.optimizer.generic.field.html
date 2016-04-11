@@ -1,0 +1,68 @@
+<ng-switch on="field.displayType">
+    <div ng-switch-when="select">
+        <label ng-if="showLabel"
+               tooltip="{{field.tooltip}}" tooltip-append-to-body="true"
+               style="{{field.labelStyle}}">{{field.displayName}}</label>
+        <select class="form-control"
+                ng-options="opt.value as opt._ for opt in field.options"
+                ng-model="field.value">
+        </select>
+    </div>
+    <div ng-switch-when="checkbox">
+        <label ng-if="showLabel"
+               tooltip="{{field.tooltip}}" tooltip-append-to-body="true"
+               style="{{field.labelStyle}}" for="{{field.name}}">{{field.displayName}}
+        </label>
+        <br ng-if="showLabel && field.formLayout!='form-inline'">
+        <input type="checkbox"
+               style="{{field.inputStyle}}"
+               ng-model="field.value"
+               name="{{field.name}}
+               ng-required=" field.validation.required">
+    </div>
+    <div ng-switch-when="switch">
+        <label ng-if="showLabel" style="{{field.labelStyle}}"
+               tooltip="{{field.tooltip}}" tooltip-append-to-body="true">{{field.displayName}}</label>
+        <br ng-if="showLabel && field.formLayout!='form-inline'">
+        <input bs-switch
+               style="{{field.inputStyle}}"
+               type="checkbox"
+               ng-model="field.value"
+               switch-size="small"
+               switch-on-text="{{field.onLabel}}"
+               switch-off-text="{{field.offLabel}}">
+    </div>
+    <div ng-switch-when="multiselect">
+        <label ng-if="showLabel"
+               tooltip="{{field.tooltip}}" tooltip-append-to-body="true"
+               style="{{field.labelStyle}}">{{field.displayName}}</label>
+        <ui-select ng-model="field.values"
+                   multiple
+                   sortable="true"
+                   close-on-select="false">
+            <ui-select-match>{{$item._}}</ui-select-match>
+            <ui-select-choices repeat="opt in field.options | filter: $select.search._">
+                <div ng-bind-html="opt._ | highlight: $select.search | sanitize"></div>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+    <div ng-switch-when="textarea">
+        <label ng-if="showLabel"
+               tooltip="{{field.tooltip}}"
+               tooltip-append-to-body="true"
+               style="{{field.labelStyle}}">{{field.displayName}}</label>
+        <textarea type="textarea" class="form-control"
+                  style="{{field.inputStyle}}"
+                  ng-model="field.value"
+                  ng-required="field.validation.required"></textarea>
+    </div>
+    <div ng-switch-default>
+        <label ng-if="showLabel"
+               tooltip="{{field.tooltip}}" tooltip-append-to-body="true"
+               style="{{field.labelStyle}}">{{field.displayName}}</label>
+        <input type="text" class="form-control"
+               style="{{field.inputStyle}}"
+               ng-model="field.value"
+               ng-required="field.validation.required">
+    </div>
+</ng-switch>
