@@ -284,10 +284,12 @@
                     <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
                     <inputStyle>border: dashed 1px #ff7500;</inputStyle>
                     <displayName>Custom Input Style</displayName>
-                    <dataType>Int32</dataType>
+                    <dataType>Float</dataType>
                     <displayType>input</displayType>
                     <validation>
                         <required>true</required>
+                        <min>4.99</min>
+                        <max>99.99</max>
                         <pattern>/[0,9]{1,6}/ig</pattern>
                     </validation>
                 </fields>

@@ -3,7 +3,7 @@
         <label ng-if="showLabel"
                tooltip="{{field.tooltip}}" tooltip-append-to-body="true"
                style="{{field.labelStyle}}">{{field.displayName}}</label>
-        <select class="form-control"
+        <select class="form-control input-sm"
                 ng-options="opt.value as opt._ for opt in field.options"
                 ng-model="field.value">
         </select>
@@ -15,6 +15,7 @@
         </label>
         <br ng-if="showLabel && field.formLayout!='form-inline'">
         <input type="checkbox"
+               class="input-sm"
                style="{{field.inputStyle}}"
                ng-model="field.value"
                name="{{field.name}}
@@ -61,8 +62,19 @@
                tooltip="{{field.tooltip}}" tooltip-append-to-body="true"
                style="{{field.labelStyle}}">{{field.displayName}}</label>
         <input type="text" class="form-control"
+               name="{{field.uniqueName}}"
+               class="input-sm"
                style="{{field.inputStyle}}"
                ng-model="field.value"
+               min="{{field.validation.min}}"
+               max="{{field.validation.max}}"
                ng-required="field.validation.required">
+        <div ng-messages="relatedForm[field.uniqueName].$error" style="color:maroon" role="alert">
+            <div ng-message="required">You did not enter a field</div>
+            <div ng-message="minlength">Your field is too short</div>
+            <div ng-message="maxlength">Your field is too long</div>
+            <div ng-message="min">Your field is too little</div>
+            <div ng-message="max">Your field is too big</div>
+        </div>
     </div>
 </ng-switch>
