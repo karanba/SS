@@ -7,10 +7,11 @@
                 scope: {
                     field: '=',
                     showLabel: '=',
-                    relatedForm: '='
+                    relatedForm: '=',
+                    namePrefix: '='
                 },
                 controller: function ($scope, $element) {
-                    $scope.field.uniqueName = "slim_son" + Math.random().toString(36).replace(/[^a-z]+/g, '');
+                    $scope.field.uniqueName = "lo_"+ $scope.namePrefix + "_" +  Math.random().toString(36).replace(/[^a-z]+/g, '');
                     if ($scope.field.validation) {
                         if ($scope.field.validation.min != null) {
                             $scope.field.validation.min = parseInt($scope.field.validation.min, 10);

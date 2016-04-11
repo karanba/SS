@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <slimSON closeOthers="false" targetRenderEngineVersion="1.*">
+    <snapShot>
+        <parameters name="AdaptiveNeighborDistanceCoeff" value="0"></parameters>
+        <parameters name="AllowMissingPlanningData" value="true"></parameters>
+        <parameters name="CellFrequency" value="null"></parameters>
+        <parameters name="ExpansionDistance" value="0"></parameters>
+        <parameters name="ForceTwoWayNeighbours" value="false"></parameters>
+        <parameters name="AdaptiveNeighborDistanceCoeff" value="0"></parameters>
+        <parameters name="ForceTwoWayVirtualNeighbours" value="false"></parameters>
+        <parameters name="IncludeIncomingRelations" value="false"></parameters>
+        <parameters name="MinimalNeighbourCount" value="0"></parameters>
+        <parameters name="NeighborSource" value="1"></parameters>
+        <parameters name="NeighborType" value="4"></parameters>
+        <parameters name="NeighbourDistance" value="4"></parameters>
+        <parameters name="NeighbourLevel" value="0"></parameters>
+        <parameters name="UseSectorDistanceForDistanceNeighbors" value="false"></parameters>
+        <parameters name="UseSectorDistanceForVirtualNeighbors" value="false"></parameters>
+        <parameters name="ValidateRelations" value="false"></parameters>
+    </snapShot>
     <groups name="G1" label="Group 1" isOpen="true" order="2" scope="perProfile">
         <tabs name="ERI" label="Ericson" order="1">
-            <sections name="Section 1:" defaultColspan="3"  formLayout="form-inline">
+            <sections name="Section 1: Layout inline" defaultColspan="3"  formLayout="form-inline">
                 <fields>
                     <value>5</value>
                     <name>Field1</name>
@@ -277,7 +295,7 @@
                     </validation>
                 </fields>
             </sections>
-            <sections name="Section 3:  Form Layout: form-inline" defaultColspan="3" order="1">
+            <sections name="Section 3:" defaultColspan="3" order="1">
                 <fields>
                     <value>5</value>
                     <name>C1</name>
@@ -336,9 +354,10 @@
         </tabs>
     </groups>
     <groups name="G2" label="Group 2" isOpen="true" order="1" scope="perPair">
-        <freqs F1="110" F2="110">IntraFreq</freqs>
-        <freqs F1="110" F2="220">InterFreq</freqs>
-        <freqs F1="220" F2="220">IntraFreq</freqs>
+        <rowIdentifierTitle>Freq</rowIdentifierTitle>
+        <rowIdentifiers prefix="r1">F1-F1 IntraFreq</rowIdentifiers>
+        <rowIdentifiers prefix="r2">F1-F2 InterFreq</rowIdentifiers>
+        <rowIdentifiers prefix="r3">F2-F2 IntraFreq</rowIdentifiers>
         <fields>
             <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
             <value>true</value>
