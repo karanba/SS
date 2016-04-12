@@ -12,15 +12,16 @@
                 },
                 controller: function ($scope, $element) {
                     $scope.field.uniqueName = "lo_"+ $scope.namePrefix + "_" +  Math.random().toString(36).replace(/[^a-z]+/g, '');
+
                     if ($scope.field.validation) {
                         if ($scope.field.validation.min != null) {
-                            $scope.field.validation.min = parseInt($scope.field.validation.min, 10);
+                            $scope.field.validation.min.value = parseInt($scope.field.validation.min.value, 10);
                         }
                         if ($scope.field.validation.max != null) {
-                            $scope.field.validation.max = parseInt($scope.field.validation.max, 10);
+                            $scope.field.validation.max.value = parseInt($scope.field.validation.max.value, 10);
                         }
                         if ($scope.field.validation.required != null) {
-                            $scope.field.validation.required = Boolean($scope.field.validation.required);
+                            $scope.field.validation.required.value = Boolean($scope.field.validation.required.value);
                         }
                     }
 
@@ -29,17 +30,18 @@
                             switch ($scope.field.dataType.toLocaleLowerCase()) {
                                 case 'int':
                                     $scope.field.value = parseInt($scope.field.value, 10);
+                                    $scope.field.inputType = 'number';
                                     break;
                                 case 'float':
                                     $scope.field.value = parseFloat($scope.field.value);
-                                    if ($scope.field.validation) {
-                                        $scope.field.validation.min = parseFloat($scope.field.validation.min);
-                                        $scope.field.validation.max = parseFloat($scope.field.validation.max);
-                                    }
+                                    $scope.field.inputType = 'number';
                                     break;
                                 case 'bool':
                                 case 'boolean':
                                     $scope.field.value = Boolean($scope.field.value)
+                                    break;
+                                default:
+                                    $scope.field.inputType = 'text';
                                     break;
                             }
                         }

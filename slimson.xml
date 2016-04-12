@@ -305,16 +305,35 @@
                     <dataType>Float</dataType>
                     <displayType>input</displayType>
                     <validation>
-                        <required>true</required>
-                        <min>4.99</min>
-                        <max>99.99</max>
-                        <pattern>/[0,9]{1,6}/ig</pattern>
+                        <required>
+                            <value>true</value>
+                            <customMessage>come onn</customMessage>
+                        </required>
+                        <min>
+                            <value>4</value>
+                            <customMessage>To smallll</customMessage>
+                        </min>
+                        <max>
+                            <value>9</value>
+                            <customMessage>To bigggg</customMessage>
+                        </max>
+                        <pattern>
+                            <value>/[0,9]{1,6}/ig</value>
+                            <customMessage>:))</customMessage>
+                        </pattern>
                     </validation>
                 </fields>
                 <fields>
                     <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
                     <value>5.5</value>
                     <displayName>Field Two</displayName>
+                    <dataType>int</dataType>
+                    <validation>
+                        <required>true</required>
+                        <min>4.99</min>
+                        <max>99.99</max>
+                        <pattern>/[0,9]{1,6}/ig</pattern>
+                    </validation>
                 </fields>
                 <fields>
                     <tooltip>Residence dejection agreement am as to abilities immediate suffering. </tooltip>
